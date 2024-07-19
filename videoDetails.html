@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/favicon.PNG" />
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img src="img/logo.PNG" class="logo" alt="">
+        <div class="search-box">
+            <input type="text" class="search-bar" placeholder="search">
+            <button class="search-btn"><img src="img/search.PNG" alt=""></button>
+        </div>
+        <div class="user-options">
+            <img src="img/video.PNG" class="icon" alt="">
+            <img src="img/grid.PNG" class="icon" alt="">
+            <img src="img/bell.PNG" class="icon" alt="">
+            <div class="user-dp">
+                <img src="img/profile-pic.PNG" alt="">
+            </div>
+        </div>
+    </nav>
+
+ <div class="video-detailsPage">
+     <div class="video-details-container">
+        <div class="video-player">
+            <iframe id="video-player" width="78%" height="500px" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="video-info">
+            <h2 id="video-title"></h2>
+            <p id="channel-name"></p>
+            <p id="video-stats"></p>
+        </div>
+
+        <div class="description-section">
+            <h2>Description</h2>
+            <div id="description-container">
+                
+            </div>
+        </div>
+
+        <div id="comments-section">
+            <div id="comment-count"></div>
+            <div id="comments-container">
+                
+            </div>
+        </div>
+     </div>
+
+         <div class="video-container-side">
+         
+         </div>
+ </div>
+
+    <script src="videoDetails.js"></script>
+</body>
+</html>
